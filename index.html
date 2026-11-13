@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saudi Riyal to Pakistani Rupee Exchange Rate</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF3EC;--surface:#FFFFFF;--ink:#0B2A1B;--muted:#54675B;--line:#D3DDD2;--accent:#00703A;--gold:#C79A2B;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07140E;--surface:#0E2218;--ink:#E6F0E8;--muted:#8FA898;--line:#1C3A2A;--accent:#36C77F;--gold:#E0B341;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#07140E;--surface:#0E2218;--ink:#E6F0E8;--muted:#8FA898;--line:#1C3A2A;--accent:#36C77F;--gold:#E0B341;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px;position:relative}
+.ticker{background:#03150C;color:#BFD8C8;font-size:13px;overflow:hidden;white-space:nowrap;border-bottom:1px solid #0F3A22}
+.track{display:flex;width:max-content;animation:scroll 50s linear infinite}
+.track:hover{animation-play-state:paused}
+.track span{padding:9px 28px;font-variant-numeric:tabular-nums}
+.track b{color:#fff;font-weight:600}.track i{color:#E8C25A;font-style:normal}
+@keyframes scroll{to{transform:translateX(-50%)}}
+/* hero: Saudi green into Pakistan green, banknote guilloche */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(120deg,#00642F 0%,#0A4A2C 48%,#01411C 100%)}
+.guil{position:absolute;inset:-20%;background:
+  repeating-radial-gradient(circle at 30% 40%,rgba(255,255,255,.07) 0 1px,transparent 1px 14px),
+  repeating-radial-gradient(circle at 75% 65%,rgba(232,194,90,.09) 0 1px,transparent 1px 18px);animation:spinslow 90s linear infinite}
+@keyframes spinslow{to{transform:rotate(360deg)}}
+.glow{position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(70px);opacity:.35;animation:breathe 9s ease-in-out infinite alternate}
+.g1{background:#E8C25A;right:-120px;top:-120px}.g2{background:#2FCF7A;left:-160px;bottom:-200px;animation-delay:-4s}
+@keyframes breathe{from{transform:scale(.85);opacity:.22}to{transform:scale(1.15);opacity:.4}}
+.rain span{position:absolute;top:-40px;color:rgba(232,194,90,.55);font-weight:600;animation:fall linear infinite}
+@keyframes fall{0%{transform:translateY(-40px) rotate(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(620px) rotate(300deg);opacity:0}}
+header{display:flex;align-items:center;padding:22px 0 0;position:relative}
+.brand{display:flex;align-items:center;gap:10px;font:600 19px "IBM Plex Serif",Georgia,serif}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#F2D675,#C79A2B);display:grid;place-items:center;font:600 18px "IBM Plex Sans",sans-serif;color:#3A2A00}
+.heroin{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:50px 0 80px;position:relative}
+h1{font:600 clamp(32px,4.6vw,50px)/1.12 "IBM Plex Serif",Georgia,serif;margin:0 0 16px;letter-spacing:-.4px}
+.lead{color:#CFE3D6;max-width:46ch;font-size:17px;margin:0 0 26px}
+.board{display:inline-block;background:rgba(0,0,0,.28);border:1px solid rgba(232,194,90,.45);border-radius:14px;padding:18px 24px;backdrop-filter:blur(4px)}
+.board small{display:flex;align-items:center;gap:8px;color:#CFE3D6;font-size:13px}
+.pulse{width:8px;height:8px;border-radius:50%;background:#4DE69A;animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(77,230,154,.7)}100%{box-shadow:0 0 0 12px rgba(77,230,154,0)}}
+.big{font:600 clamp(30px,4.4vw,46px)/1.15 "IBM Plex Sans",sans-serif;font-variant-numeric:tabular-nums;margin-top:6px;white-space:nowrap;
+  background:linear-gradient(90deg,#fff 0%,#F2D675 40%,#fff 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 4s linear infinite}
+@keyframes shimmer{to{background-position:-220% 0}}
+.rev{margin-top:4px;font-size:14px;color:#CFE3D6;font-variant-numeric:tabular-nums}
+/* stage with banknotes */
+.stage{position:relative;height:350px}
+.note{position:absolute;width:290px;height:150px;border-radius:12px;border:2px solid rgba(255,255,255,.4);overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.4);padding:14px 16px;display:flex;flex-direction:column;justify-content:space-between}
+.note::before{content:"";position:absolute;inset:0;background:repeating-radial-gradient(circle at 15% 50%,rgba(255,255,255,.14) 0 1.5px,transparent 1.5px 9px),repeating-radial-gradient(circle at 90% 20%,rgba(232,194,90,.2) 0 1px,transparent 1px 7px)}
+.note>*{position:relative}
+.n1{background:linear-gradient(135deg,#0C8F4A,#04552B);left:0;top:8px;transform:rotate(-7deg);animation:float1 6s ease-in-out infinite}
+.n2{background:linear-gradient(135deg,#0F7F6B,#063F3A);right:0;bottom:6px;transform:rotate(6deg);animation:float2 7s ease-in-out infinite}
+@keyframes float1{50%{transform:translateY(-16px) rotate(-4deg)}}
+@keyframes float2{50%{transform:translateY(14px) rotate(9deg)}}
+.note .lbl{font-size:11px;letter-spacing:.4px;color:#E8F3EC}
+.note .amt{font:600 34px "IBM Plex Sans",sans-serif;color:#fff}
+.note .sym{position:absolute;right:14px;top:10px;width:44px;height:44px;border-radius:50%;border:2px solid #E8C25A;display:grid;place-items:center;color:#F2D675;font:600 17px "IBM Plex Sans",sans-serif}
+.coin{position:absolute;left:50%;top:50%;margin:-34px 0 0 -34px;width:68px;height:68px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFF1B8,#E0B341 55%,#A9781A);display:grid;place-items:center;font:600 26px sans-serif;color:#4A3300;box-shadow:0 0 0 6px rgba(232,194,90,.25),0 10px 24px rgba(0,0,0,.4);animation:flip 4s ease-in-out infinite;z-index:3}
+@keyframes flip{0%,100%{transform:rotateY(0)}50%{transform:rotateY(180deg)}}
+.dots{position:absolute;left:46%;top:44%;width:80px;height:80px;z-index:2}
+.dots i{position:absolute;width:6px;height:6px;border-radius:50%;background:#F2D675;opacity:0;animation:flow 2.4s ease-in-out infinite}
+@keyframes flow{0%{transform:translate(-90px,-70px);opacity:0}30%{opacity:1}100%{transform:translate(110px,90px);opacity:0}}
+/* sections */
+section{padding:60px 0 0}
+h2{font:600 26px "IBM Plex Serif",Georgia,serif;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 22px;font-size:15px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:13px 18px;text-align:right;border-bottom:1px solid var(--line);transition:background .2s}
+th:first-child,td:first-child{text-align:left}
+th{font-size:13px;color:var(--muted);font-weight:500;background:linear-gradient(90deg,transparent,rgba(199,154,43,.12),transparent)}
+tr:last-child td{border-bottom:0}td:last-child{font-weight:600;color:var(--accent)}
+tbody tr:hover td{background:rgba(0,112,58,.08)}
+.banks{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:14px}
+.bank{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 8px 13px;text-align:center;font-size:13px;opacity:0;transform:translateY(22px) scale(.94);transition:opacity .6s,transform .6s,box-shadow .25s,border-color .25s}
+.bank.in{opacity:1;transform:none}
+.bank:hover{transform:translateY(-6px) scale(1.04);border-color:var(--gold);box-shadow:0 14px 28px rgba(0,60,30,.18)}
+.badge{width:54px;height:54px;border-radius:14px;margin:0 auto 10px;display:grid;place-items:center;background:#fff;border:2px solid;font:600 15px "IBM Plex Sans",sans-serif;box-shadow:0 4px 10px rgba(0,0,0,.08);transition:transform .5s}
+.bank:hover .badge{transform:rotateY(360deg)}
+.bank b{display:block;font-weight:500}
+.conv{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:14px;overflow:hidden;box-shadow:0 18px 40px rgba(0,60,30,.12)}
+.cin{padding:26px;border-right:1px solid var(--line)}
+.cout{padding:26px;background:linear-gradient(135deg,rgba(0,112,58,.1),rgba(199,154,43,.1))}
+.clab{display:block;font-size:13px;color:var(--muted);font-weight:500;margin-bottom:6px}
+.cbox{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:0 14px;transition:border-color .15s,box-shadow .15s}
+.cbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,112,58,.18)}
+.cbox input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:500 28px "IBM Plex Sans",sans-serif;font-variant-numeric:tabular-nums;padding:14px 0;outline:none}
+.cbox span{font-weight:600;color:var(--accent);font-size:14px}
+.seg{display:flex;margin-top:16px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{flex:1;border:0;background:transparent;color:var(--muted);padding:10px;font:500 14px "IBM Plex Sans",sans-serif;cursor:pointer;transition:background .25s,color .25s}
+.seg button.on{background:var(--accent);color:#fff}
+.seg button:focus-visible,.cbox input:focus-visible,.cchip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.cres{font:600 clamp(28px,4vw,38px)/1.15 "IBM Plex Sans",sans-serif;font-variant-numeric:tabular-nums;color:var(--accent);word-break:break-all;margin:4px 0}
+.crate{font-size:13px;color:var(--muted)}
+.cchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.cchip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:400 14px "IBM Plex Sans",sans-serif;cursor:pointer;font-variant-numeric:tabular-nums;transition:transform .15s,border-color .15s}
+.cchip:hover{transform:translateY(-2px);border-color:var(--gold)}
+@media (max-width:860px){.conv{grid-template-columns:1fr}.cin{border-right:0;border-bottom:1px solid var(--line)}}
+.bank{cursor:pointer}
+.bank.sel{border-color:var(--gold);box-shadow:0 0 0 3px rgba(199,154,43,.3)}
+.bank:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.fee{margin-top:18px}
+.feecard{display:flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:16px 20px;animation:feein .45s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes feein{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+.feecard .badge{margin:0;flex:none}
+.feecard .t{flex:1}.feecard .t b{display:block;font-size:16px;font-weight:600}.feecard .t span{color:var(--muted);font-size:14px}
+.zero{font:600 32px "IBM Plex Sans",sans-serif;color:var(--accent);display:flex;align-items:center;gap:10px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tick{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:17px;animation:pop .5s .15s both cubic-bezier(.2,1.6,.4,1)}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+@media (max-width:520px){.feecard{flex-wrap:wrap}.zero{font-size:26px}}
+@media (prefers-reduced-motion:reduce){.feecard,.tick{animation:none}}
+.conv.fx{position:relative;padding:6px;border:0;border-radius:20px;overflow:visible;background:linear-gradient(135deg,#F2D675,#C79A2B 50%,#8A6511);transform:perspective(1400px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .18s ease-out;box-shadow:0 1px 0 #d9ae3c,0 2px 0 #c79a2b,0 3px 0 #b08720,0 4px 0 #9a7418,0 5px 0 #856310,0 6px 0 #6f520c,0 30px 50px rgba(0,40,20,.4)}
+.conv.fx .cin,.conv.fx .cout{position:relative;overflow:hidden;border:0;padding:28px 26px 30px}
+.conv.fx .cin{border-radius:14px 0 0 14px;background:linear-gradient(135deg,#0C8F4A,#04552B)}
+.conv.fx .cout{border-radius:0 14px 14px 0;background:linear-gradient(135deg,#0F7F6B,#052F2C)}
+.conv.fx .cin::before,.conv.fx .cout::before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-radial-gradient(circle at 15% 50%,rgba(255,255,255,.12) 0 1.5px,transparent 1.5px 9px),repeating-radial-gradient(circle at 90% 20%,rgba(232,194,90,.18) 0 1px,transparent 1px 7px)}
+.conv.fx .cin>*,.conv.fx .cout>*{position:relative}
+.fxtag{display:inline-block;font-size:12px;font-weight:600;color:#F2D675;border:1px solid rgba(242,214,117,.55);border-radius:999px;padding:3px 12px;margin-bottom:14px;background:rgba(0,0,0,.22)}
+.conv.fx .clab,.conv.fx .crate{color:#CFE3D6}
+.conv.fx .cbox{background:rgba(0,0,0,.32);border:1px solid rgba(242,214,117,.6);box-shadow:inset 0 3px 8px rgba(0,0,0,.45)}
+.conv.fx .cbox input{color:#fff}.conv.fx .cbox span{color:#F2D675}
+.conv.fx .seg{border:0;gap:12px;overflow:visible;margin-top:20px}
+.conv.fx .seg button{border-radius:10px;background:linear-gradient(#1F9A5C,#0B6B3A);color:#fff;font-weight:600;box-shadow:0 4px 0 #04381E,0 8px 14px rgba(0,0,0,.35);transition:transform .1s,box-shadow .1s}
+.conv.fx .seg button:active,.conv.fx .seg button.on{transform:translateY(3px);box-shadow:0 1px 0 #04381E}
+.conv.fx .seg button.on{background:linear-gradient(#FFE08A,#E0B341);color:#3A2A00;box-shadow:0 1px 0 #8A6511,inset 0 0 0 1px rgba(255,255,255,.45)}
+.conv.fx .cres{font-size:clamp(30px,4.2vw,42px);color:transparent;background:linear-gradient(90deg,#FFF1B8,#E8C25A,#FFF1B8);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;animation:shimmer 4s linear infinite;filter:drop-shadow(0 2px 0 rgba(0,0,0,.4))}
+.conv.fx .cchip{border:0;border-radius:999px;background:radial-gradient(circle at 35% 30%,#FFF1B8,#E0B341 60%,#B8861F);color:#3A2A00;font-weight:600;padding:7px 14px;box-shadow:0 3px 0 #7A560C,0 6px 10px rgba(0,0,0,.35);transition:transform .12s,box-shadow .12s}
+.conv.fx .cchip:hover{transform:translateY(-2px);border:0}
+.conv.fx .cchip:active{transform:translateY(2px);box-shadow:0 1px 0 #7A560C}
+.fxcoin{position:absolute;left:50%;top:50%;margin:-30px 0 0 -30px;width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFF1B8,#E0B341 55%,#A9781A);display:grid;place-items:center;font:600 24px sans-serif;color:#4A3300;box-shadow:0 0 0 5px rgba(232,194,90,.3),0 8px 18px rgba(0,0,0,.45);z-index:5;animation:flip 4s ease-in-out infinite}
+@media (max-width:860px){.conv.fx .cin{border-radius:14px 14px 0 0}.conv.fx .cout{border-radius:0 0 14px 14px}}
+@media (prefers-reduced-motion:reduce){.fxcoin,.conv.fx .cres{animation:none}.conv.fx .cres{color:#F2D675;background:none}.conv.fx{transition:none}}
+.ratebar{margin-top:0}
+#chg{cursor:inherit;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);font:500 14px "IBM Plex Sans",sans-serif;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.linkbtn:hover{color:var(--gold)}
+.rp{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px;padding:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;animation:feein .35s}
+.rp[hidden]{display:none}
+.rp label{font-size:13px;color:var(--muted)}
+.rp input{width:130px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);padding:9px 12px;font:500 16px "IBM Plex Sans",sans-serif;font-variant-numeric:tabular-nums}
+.rp input:focus-visible,.rbtn:focus-visible,.linkbtn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.rbtn{border:0;border-radius:8px;background:var(--accent);color:#fff;padding:9px 16px;font:600 14px "IBM Plex Sans",sans-serif;cursor:pointer}
+.rbtn.alt{background:transparent;color:var(--muted);border:1px solid var(--line)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbtn:not(.alt){color:#04201A}}
+:root[data-theme="dark"] .rbtn:not(.alt){color:#04201A}
+#rmsg{font-size:13px;color:var(--accent)}
+footer{margin-top:60px;border-top:1px solid var(--line);padding:22px 0 36px;color:var(--muted);font-size:13px}
+@media (max-width:860px){.heroin{grid-template-columns:1fr;padding:34px 0 60px}.stage{height:320px}.two{grid-template-columns:1fr}.note{width:250px;height:132px}}
+@media (prefers-reduced-motion:reduce){.track,.guil,.glow,.rain span,.pulse,.big,.n1,.n2,.coin,.dots i{animation:none}.big{color:#F2D675;background:none}.bank{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<div class="hero">
+  <div class="guil"></div><div class="glow g1"></div><div class="glow g2"></div>
+  <div class="rain" id="rain" aria-hidden="true"></div>
+  <div class="wrap">
+    <header><div class="brand"><div class="logo">﷼</div>Riyal Remit</div></header>
+    <div class="heroin">
+      <div>
+        <h1>Saudi Riyal to Pakistani Rupee Exchange Rate</h1>
+        <p class="lead">Send money home with a clear view of the rate, and see what common amounts are worth in Pakistan.</p>
+        <div class="board">
+          <small><span class="pulse"></span>Current rate</small>
+          <div class="big" id="big">1 SAR = 0.0000 PKR</div>
+          <div class="rev" id="rev"></div>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="note n1"><div class="lbl">SAUDI ARABIA</div><div class="sym">﷼</div><div class="amt">SAR 500</div></div>
+        <div class="dots"><i style="animation-delay:0s"></i><i style="animation-delay:.5s"></i><i style="animation-delay:1s"></i><i style="animation-delay:1.5s"></i></div>
+        <div class="coin">⇄</div>
+        <div class="note n2"><div class="lbl">PAKISTAN</div><div class="sym">Rs</div><div class="amt">PKR 36,562</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <h2>Convert your amount</h2>
+    <p class="sub">Type any amount and choose the direction.</p>
+    <div class="conv fx"><div class="fxcoin" aria-hidden="true">⇄</div>
+      <div class="cin"><div class="fxtag">Saudi Arabia</div>
+        <label class="clab" for="camt">Amount</label>
+        <div class="cbox"><input id="camt" type="text" inputmode="decimal" value="1,000" autocomplete="off"><span id="ccur">SAR</span></div>
+        <div class="seg" role="group" aria-label="Direction"><button type="button" id="d1" class="on">SAR to PKR</button><button type="button" id="d2">PKR to SAR</button></div>
+      </div>
+      <div class="cout"><div class="fxtag">Pakistan</div>
+        <div class="clab" id="clab2">They receive (Pakistani rupee)</div>
+        <div class="cres" id="cres" aria-live="polite">PKR 0.00</div>
+        <div class="crate" id="crate"></div>
+        <div class="cchips" id="cchips"></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Common amounts</h2>
+    <p class="sub">Quick reference at the current rate.</p>
+    <div class="two">
+      <div class="scroll"><table><thead><tr><th>Saudi riyal</th><th>Pakistani rupee</th></tr></thead><tbody id="rows1"></tbody></table></div>
+      <div class="scroll"><table><thead><tr><th>Pakistani rupee</th><th>Saudi riyal</th></tr></thead><tbody id="rows2"></tbody></table></div>
+    </div>
+  </section>
+  <section>
+    <h2>Send to any major Pakistani bank</h2>
+    <p class="sub">Your riyals can reach accounts and wallets at Pakistan’s leading banks and mobile money services.</p>
+    <div class="banks" id="banks"></div>
+    <div class="fee" id="fee" aria-live="polite"><div class="crate">Tap a bank to see the transfer fee.</div></div>
+  </section>
+  <footer>Indicative <span id="chg">rate</span> only. Our transfer fee is shown for each bank; the receiving bank or exchange house may apply its own rates and fees, so confirm the final amount before you send money. Bank names are shown for reference; this page is not affiliated with any of them.
+    <div class="ratebar">
+      
+      <div class="rp" id="rp" hidden>
+        <label for="rin">1 SAR in PKR</label>
+        <input id="rin" type="text" inputmode="decimal" autocomplete="off">
+        <button type="button" class="rbtn" id="rok">Apply</button>
+        <button type="button" class="rbtn alt" id="rrs">Reset</button>
+        <span id="rmsg" aria-live="polite"></span>
+      </div>
+    </div></footer>
+</div>
+
+<script>
+(function(){
+  var R=73.1239, $=function(i){return document.getElementById(i)};
+  try{var sv=parseFloat(localStorage.getItem('sarpkr-rate3'));if(sv>0&&sv<100000)R=sv}catch(e){}
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function fmt(n,d){return n.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d})}
+  // count-up of the headline rate
+  function count(){var t0=null,dur=1500;function s(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);
+    $('big').textContent='1 SAR = '+fmt(R*e,4)+' PKR';if(p<1)requestAnimationFrame(s)}
+    if(reduce)$('big').textContent='1 SAR = '+fmt(R,4)+' PKR';else requestAnimationFrame(s)}
+  count();
+  $('rev').textContent='1 PKR = '+fmt(1/R,4)+' SAR';
+  // user input converter
+  var cdir='SAR',cshown=0,craf,camt=$('camt');
+  function cnum(s){var n=parseFloat(String(s).replace(/,/g,''));return isFinite(n)?n:0}
+  function cset(pre,v){cancelAnimationFrame(craf);if(reduce){$('cres').textContent=pre+fmt(v,2);cshown=v;return}
+    var f=cshown,t0=null;function s(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/400),e=1-Math.pow(1-p,3),c=f+(v-f)*e;$('cres').textContent=pre+fmt(c,2);cshown=c;if(p<1)craf=requestAnimationFrame(s)}craf=requestAnimationFrame(s)}
+  function crender(){var a=cnum(camt.value),res=cdir==='SAR'?a*R:a/R;
+    cset(cdir==='SAR'?'PKR ':'SAR ',res);
+    $('ccur').textContent=cdir;
+    $('clab2').textContent=cdir==='SAR'?'They receive (Pakistani rupee)':'They receive (Saudi riyal)';
+    $('crate').textContent='At 1 SAR = '+fmt(R,4)+' PKR';
+    $('d1').className=cdir==='SAR'?'on':'';$('d2').className=cdir==='PKR'?'on':'';
+    var l=cdir==='SAR'?[100,500,1000,5000]:[10000,50000,100000,500000];
+    $('cchips').innerHTML=l.map(function(v){return '<button type="button" class="cchip" data-v="'+v+'">'+fmt(v,0)+'</button>'}).join('')}
+  camt.addEventListener('input',crender);
+  camt.addEventListener('blur',function(){var n=cnum(camt.value);camt.value=n?fmt(n,n%1?2:0):''});
+  $('d1').addEventListener('click',function(){cdir='SAR';crender()});
+  $('d2').addEventListener('click',function(){cdir='PKR';crender()});
+  $('cchips').addEventListener('click',function(e){var b=e.target.closest('.cchip');if(!b)return;camt.value=fmt(+b.dataset.v,0);crender()});
+  crender();
+  var cv=document.querySelector('.conv.fx');
+  if(cv&&!reduce&&window.matchMedia('(hover:hover)').matches){
+    cv.addEventListener('mousemove',function(e){var r=cv.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;cv.style.setProperty('--ry',(x*8)+'deg');cv.style.setProperty('--rx',(-y*8)+'deg')});
+    cv.addEventListener('mouseleave',function(){cv.style.setProperty('--ry','0deg');cv.style.setProperty('--rx','0deg')})}
+  // tables
+  $('rows1').innerHTML=[100,500,1000,2000,5000,10000,25000].map(function(v){return '<tr><td>SAR '+fmt(v,0)+'</td><td>PKR '+fmt(v*R,2)+'</td></tr>'}).join('');
+  $('rows2').innerHTML=[5000,10000,25000,50000,100000,250000,500000].map(function(v){return '<tr><td>PKR '+fmt(v,0)+'</td><td>SAR '+fmt(v/R,2)+'</td></tr>'}).join('');
+  // ticker
+  var it=['<span><b>SAR/PKR</b> <i>'+fmt(R,4)+'</i></span>','<span><b>PKR/SAR</b> <i>'+fmt(1/R,4)+'</i></span>'];
+  [100,500,1000,5000,10000].forEach(function(v){it.push('<span>SAR '+fmt(v,0)+' = <b>PKR '+fmt(v*R,0)+'</b></span>')});
+  var h=it.join('');$('track').innerHTML=h+h+h+h;
+  // falling currency symbols
+  var rain='';for(var i=0;i<16;i++){var s=14+Math.random()*18;rain+='<span style="left:'+(Math.random()*96)+'%;font-size:'+s+'px;animation-duration:'+(9+Math.random()*10)+'s;animation-delay:-'+(Math.random()*16)+'s">'+(i%2?'﷼':'Rs')+'</span>'}
+  $('rain').innerHTML=rain;
+  // banks
+  var B=[['HBL','HBL','#0B7A5E'],['UBL','UBL','#0A5CA8'],['MCB Bank','MCB','#00843D'],['Meezan Bank','MZN','#6A1B6E'],['Allied Bank','ABL','#1F4E9E'],['Bank Alfalah','BAF','#D3202F'],['Faysal Bank','FBL','#0F7A56'],['Askari Bank','AKB','#003B71'],['Habib Metro','HMB','#E01E26'],['JS Bank','JS','#F58220'],['National Bank','NBP','#0B7A3E'],['Standard Chartered','SC','#0473EA'],['Easypaisa','EP','#3CB44A'],['JazzCash','JC','#E11B22']];
+  $('banks').innerHTML=B.map(function(b,i){return '<div class="bank" role="button" tabindex="0" data-i="'+i+'" style="transition-delay:'+(i*60)+'ms"><div class="badge" style="color:'+b[2]+';border-color:'+b[2]+'">'+b[1]+'</div><b>'+b[0]+'</b></div>'}).join('');
+  function showFee(i){var b=B[i];document.querySelectorAll('.bank').forEach(function(e,k){e.style.transitionDelay='0ms';e.classList.toggle('sel',k===i)});
+    $('fee').innerHTML='<div class="feecard"><div class="badge" style="color:'+b[2]+';border-color:'+b[2]+'">'+b[1]+'</div><div class="t"><b>Send to '+b[0]+'</b><span>Our transfer fee for this bank</span></div><div class="zero"><span class="tick">✓</span>0 SAR</div></div>'}
+  $('banks').addEventListener('click',function(e){var c=e.target.closest('.bank');if(c)showFee(+c.dataset.i)});
+  $('banks').addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){var c=e.target.closest('.bank');if(c){e.preventDefault();showFee(+c.dataset.i)}}});
+  var els=document.querySelectorAll('.bank');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})}
+  else els.forEach(function(e){e.classList.add('in')});
+  // editable rate
+  function noteUpd(){var a=document.querySelector('.n2 .amt');if(a)a.textContent='PKR '+fmt(500*R,0)}
+  function refresh(){
+    count();$('rev').textContent='1 PKR = '+fmt(1/R,4)+' SAR';
+    $('rows1').innerHTML=[100,500,1000,2000,5000,10000,25000].map(function(v){return '<tr><td>SAR '+fmt(v,0)+'</td><td>PKR '+fmt(v*R,2)+'</td></tr>'}).join('');
+    $('rows2').innerHTML=[5000,10000,25000,50000,100000,250000,500000].map(function(v){return '<tr><td>PKR '+fmt(v,0)+'</td><td>SAR '+fmt(v/R,2)+'</td></tr>'}).join('');
+    var t=['<span><b>SAR/PKR</b> <i>'+fmt(R,4)+'</i></span>','<span><b>PKR/SAR</b> <i>'+fmt(1/R,4)+'</i></span>'];
+    [100,500,1000,5000,10000].forEach(function(v){t.push('<span>SAR '+fmt(v,0)+' = <b>PKR '+fmt(v*R,0)+'</b></span>')});
+    var hh=t.join('');$('track').innerHTML=hh+hh+hh+hh;
+    noteUpd();crender();
+  }
+  noteUpd();
+  var rp=$('rp'),rin=$('rin'),rmsg=$('rmsg');
+  var cc=0,ct;$('chg').addEventListener('mousedown',function(e){e.preventDefault()});
+  $('chg').addEventListener('click',function(){cc++;clearTimeout(ct);ct=setTimeout(function(){cc=0},1200);if(cc>=3){cc=0;var o=rp.hidden;rp.hidden=!o;rmsg.textContent='';if(o){rin.value=R;rin.focus();rin.select()}}});
+  $('rok').addEventListener('click',function(){
+    var n=cnum(rin.value);
+    if(!(n>0&&n<100000)){rmsg.style.color='#D3202F';rmsg.textContent='Enter a rate above 0.';return}
+    R=n;try{localStorage.setItem('sarpkr-rate3',String(n))}catch(e){}
+    rmsg.style.color='';rmsg.textContent='Updated: 1 SAR = '+fmt(n,4)+' PKR';refresh()});
+  $('rrs').addEventListener('click',function(){
+    R=73.1239;try{localStorage.removeItem('sarpkr-rate3')}catch(e){}
+    rin.value=R;rmsg.style.color='';rmsg.textContent='Rate reset to 73.1239';refresh()});
+  rin.addEventListener('keydown',function(e){if(e.key==='Enter')$('rok').click()});
+})();
+</script>
+</body>
+</html>
